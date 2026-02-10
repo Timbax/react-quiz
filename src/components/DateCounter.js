@@ -1,5 +1,8 @@
 import { useReducer } from "react";
 
+/* AL UTILIZAR useReducer POR LO GENERAL SE UTILIZA UN OBJETO COMO VALOR INICIAL */
+const initialState = { count: 0, step: 1 };
+
 /* LA FUNCION REDUCER GENERALMENTE RECIBE ESTOS DOS PARAMETROS SIEMPRE "STATE" Y "ACTION"  */
 function reducer(state, action) {
   console.log(state, action);
@@ -18,6 +21,8 @@ function reducer(state, action) {
       return { ...state, count: action.payload };
     case "setStep":
       return { ...state, step: action.payload };
+    case "reset":
+      return initialState;
 
     default:
       throw new Error("Unknow action");
@@ -31,9 +36,6 @@ function reducer(state, action) {
 function DateCounter() {
   /* const [count, setCount] = useState(0); */
   /* const [step, setStep] = useState(1); */
-
-  /* AL UTILIZAR useReducer POR LO GENERAL SE UTILIZA UN OBJETO COMO VALOR INICIAL */
-  const initialState = { count: 0, step: 1 };
 
   /* "sate" HACE REFERENCIA AL ESTADO QUE BASICAMANTE CONTIENE LOS DATOS DE "initialState" */
   const [state, dispatch] = useReducer(reducer, initialState);
@@ -68,6 +70,7 @@ function DateCounter() {
   };
 
   const reset = function () {
+    dispatch({ type: "reset" });
     /* setCount(0); */
     /* setStep(1); */
   };
