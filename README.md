@@ -30,6 +30,7 @@ npm install
 ### 2. Ejecutar en modo desarrollo (dos terminales)
 
 **Terminal 1 - Iniciar el servidor JSON:**
+
 ```bash
 npm run server
 ```
@@ -37,6 +38,7 @@ npm run server
 Este comando inicia json-server en `http://localhost:8000` sirviendo las preguntas desde `data/questions.json`.
 
 **Terminal 2 - Iniciar la aplicación React:**
+
 ```bash
 npm start
 ```
@@ -95,4 +97,4 @@ El quiz maneja los siguientes estados mediante `useReducer`:
 
 ## 👨‍💻 Autor
 
-Proyecto desarrollado como parte del aprendizaje de React Hooks.
+Daniel D.Pérez
