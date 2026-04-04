@@ -97,4 +97,4 @@ El quiz maneja los siguientes estados mediante `useReducer`:
 
 ## 👨‍💻 Autor
 
-Daniel D.Pérez
+Daniel D. Pérez
