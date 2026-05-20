@@ -7,6 +7,7 @@ import StartScreen from "./components/StartScreen";
 import Question from "./components/Question";
 import NextButton from "./components/NextButton";
 import Progress from "./components/Progress";
+import FinishScreen from "./components/FinishScreen";
 
 export default function App() {
   const initialState = {
@@ -44,6 +45,8 @@ export default function App() {
       case "nextQuestion":
         return { ...state, index: state.index + 1, answer: null };
 
+      case "finish":
+        return { ...state, status: "finished" };
       default:
         throw new Error("Action unknow");
     }
@@ -91,8 +94,16 @@ export default function App() {
               answer={answer}
             />
 
-            <NextButton dispatch={dispatch} answer={answer} />
+            <NextButton
+              dispatch={dispatch}
+              answer={answer}
+              index={index}
+              numQuestions={numQuestions}
+            />
           </>
+        )}
+        {status === "finished" && (
+          <FinishScreen maxPossiblePoints={maxPossiblePoints} points={points} />
         )}
       </Main>
     </div>
