@@ -53,6 +53,8 @@ export default function App() {
           highscore:
             state.points > state.highscore ? state.points : state.highscore,
         };
+      case "restart":
+        return { ...initialState, questions: state.questions, status: "ready" };
       default:
         throw new Error("Action unknow");
     }
@@ -107,7 +109,12 @@ export default function App() {
           </>
         )}
         {status === "finished" && (
-          <FinishScreen maxPossiblePoints={maxPossiblePoints} points={points} highscore={highscore}/>
+          <FinishScreen
+            maxPossiblePoints={maxPossiblePoints}
+            points={points}
+            highscore={highscore}
+            dispatch={dispatch}
+          />
         )}
       </Main>
     </div>
