@@ -1,0 +1,139 @@
+{
+  "questions": [
+    {
+      "question": "Cuál es el marco de trabajo de JavaScript más popular?",
+      "options": ["Angular", "React", "Svelte", "Vue"],
+      "correctOption": 1,
+      "points": 10
+    },
+    {
+      "question": "Qué empresa creó React?",
+      "options": ["Google", "Apple", "Netflix", "Facebook"],
+      "correctOption": 3,
+      "points": 10
+    },
+    {
+      "question": "Cuál es el componente básico de las aplicaciones React?",
+      "options": ["Componentes", "Bloques", "Elementos", "Efectos"],
+      "correctOption": 0,
+      "points": 10
+    },
+    {
+      "question": "Cómo se llama la sintaxis que utilizamos para describir la interfaz de usuario en los componentes de React?",
+      "options": ["FBJ", "Babel", "JSX", "ES2015"],
+      "correctOption": 2,
+      "points": 10
+    },
+    {
+      "question": "Cómo fluyen los datos de forma natural en las aplicaciones de React?",
+      "options": [
+        "De los componentes padres a los hijos",
+        "De los componentes hijos a los padres",
+        "En ambos sentidos",
+        "Los desarrolladores deciden"
+      ],
+      "correctOption": 0,
+      "points": 10
+    },
+    {
+      "question": "Cómo se pasan datos a un componente hijo?",
+      "options": ["State", "Props", "PropTypes", "Parameters"],
+      "correctOption": 1,
+      "points": 10
+    },
+    {
+      "question": "Cuándo se debe utilizar el estado derivado?",
+      "options": [
+        "Siempre que el estado no deba provocar un nuevo re-render",
+        "Siempre que el estado pueda sincronizarse con un efecto",
+        "Siempre que el estado deba ser accesible para todos los componentes",
+        "Siempre que el estado pueda calcularse a partir de otra variable de estado"
+      ],
+      "correctOption": 3,
+      "points": 30
+    },
+    {
+      "question": "Qué provoca que se vuelva a renderizar la interfaz de usuario en React?",
+      "options": [
+        "Ejecutar un effect",
+        "Pasar props",
+        "Actualizar el estado",
+        "Añadir detectores de eventos a elementos del DOM"
+      ],
+      "correctOption": 2,
+      "points": 20
+    },
+    {
+      "question": "Cuándo \"Manipulamos\" directamente el DOM en React?",
+      "options": [
+        "Cuando necesitamos escuchar un evento",
+        "Cuando necesitamos cambiar la interfaz de usuario",
+        "Cuando necesitamos añadir estilos",
+        "Casi nunca"
+      ],
+      "correctOption": 3,
+      "points": 20
+    },
+    {
+      "question": "En qué situaciones se utiliza un callback para actualizar el estado?",
+      "options": [
+        "Cuando la actualización del estado sea lenta",
+        "Cuando el estado actualizado contenga una gran cantidad de datos",
+        "Cuando la actualización del estado deba realizarse más rápido",
+        "Cuando el nuevo estado dependa del estado anterior"
+      ],
+      "correctOption": 3,
+      "points": 30
+    },
+    {
+      "question": "Si pasamos una función a `useState`, ¿cuándo se ejecutará esa función?",
+      "options": [
+        "En cada re-render",
+        "Cada vez que actualizamos el estado",
+        "Solo en el render inicial",
+        "La primera vez que actualizamos el estado"
+      ],
+      "correctOption": 2,
+      "points": 30
+    },
+    {
+      "question": "Qué hook se debe utilizar para una solicitud de API en la renderización inicial del componente?",
+      "options": ["useState", "useEffect", "useRef", "useReducer"],
+      "correctOption": 1,
+      "points": 10
+    },
+    {
+      "question": "Qué variables deben incluirse en la matriz de dependencias de useEffect?",
+      "options": [
+        "Normalmente ninguna",
+        "Todas nuestras variables de estado",
+        "Todas las variables de estado y props a las que hace referencia el effect",
+        "Todas las variables necesarias para la limpieza"
+      ],
+      "correctOption": 2,
+      "points": 30
+    },
+    {
+      "question": "Un effect siempre se ejecutará en el renderizado inicial.",
+      "options": [
+        "Verdadero",
+        "Depende de la matriz de dependencias",
+        "Falso",
+        "Depende del código del efecto"
+      ],
+      "correctOption": 0,
+      "points": 30
+    },
+    {
+      "question": "Cuándo se ejecutará un efecto si no tiene una matriz de dependencias?",
+      "options": [
+        "Solo cuando se monta el componente",
+        "Solo cuando se desmonta el componente",
+        "La primera vez que se vuelve a renderizar el componente",
+        "Cada vez que se vuelve a renderizar el componente"
+      ],
+      "correctOption": 3,
+      "points": 20
+    }
+  ]
+}
