@@ -8,7 +8,7 @@
   --color-accent: #ffa94d;
 }
 
-@import url("https://fonts.googleapis.com/css2?family=Codystar&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap");
 
 * {
   margin: 0;
@@ -47,7 +47,7 @@ body {
 }
 
 .app-header {
-  width: 66rem;
+  width: 55rem;
   margin-bottom: 4rem;
   display: flex;
   align-items: center;
